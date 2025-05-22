@@ -1,0 +1,161 @@
+// お給料
+#courseback {
+  position: relative;
+  padding-bottom: 128px;
+  border-top: 48px solid #ff98c1;
+  background:
+    url("img/salary_bg1.png") no-repeat top center / 100% auto,
+    url("img/salary_bg2.png") no-repeat bottom center / 100% auto;
+  h2 { @extend %section_title; }
+}
+
+// コース一覧
+.course-list {
+  margin-top: 128px;
+  .course {
+    position: relative;
+    .inner {
+      margin-bottom: 80px;
+      padding: 24px;
+      background-image: repeating-linear-gradient(135deg, transparent 0, transparent 1px, rgba(#616161,0.2) 1px, rgba(#616161,0.2) 2px);
+      box-shadow: 0 0 4px 1px rgba(#000,0.2), inset 0 0 0 1px #fff;
+      line-height: 1.5;
+    }
+    h3 {
+      display: block;
+      position: relative;
+       padding-bottom: 8px;
+      img {
+        position: absolute;
+        top: -72px;
+        height: 96px;
+      }
+      span {
+        color: #d91161;
+        font-size: 2.2rem;
+      }
+    }
+    p {
+      margin: 16px 0;
+      color: #373737;
+      font-size: 2rem;
+      text-align: center;
+    }
+    
+    // 矢印
+    &::before {
+      content: "";
+      position: absolute;
+      top: 64px;
+      border: 0 solid transparent;
+      border-top: 12px solid #000;      
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 64px;
+      border-bottom: 1px solid #000;
+      width: calc( calc( 100% - 960px ) / 2 + 1024px ) ;
+      height: 0;
+    }
+    &:nth-of-type(odd) {
+      h3 {
+        text-align: right;
+        img { left: -56px; }
+      }
+      &::before {
+        right: calc( calc( 100% - 960px) / 2 + 1008px);
+        border-left-width: 16px;
+      }
+      &::after { right: 0; }
+    }
+    &:nth-of-type(even) {
+      h3 {
+        text-align: left;
+        img { right: -56px; }
+      }
+      &::before, &::after {
+        left: calc( calc( 100% - 960px) / 2 + 1008px);
+        border-right-width: 16px;
+      }
+      &::after { left: 0; }
+    }
+  }
+  .prices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: #fff;
+    color: #d20000;
+    font-family: $font_mincho;
+    text-align: center;
+    dt {
+      font-size: 1.8rem;
+      line-height: 1;
+      em { font-size: 3rem; }
+    }
+    dd {
+      &:not(:last-of-type) { margin-right: 0.88em; }
+      font-size: 3.2rem;
+      em {
+        font-size: 4.4rem;
+        letter-spacing: -0.1px;
+      }
+    }
+  }
+}
+
+// メディアクエリ 1200以下
+@include mq(xlarge) {
+  #courseback {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  .course-list {
+    .course {
+      h3 {
+        text-align: center !important;
+        img {
+          position: static;
+          height: auto; 
+          max-height: 96px;
+        }
+        span { display: block; }
+      }
+      &::after, &::before { display: none; }
+    }
+    @include mq(small) {
+      .prices {
+        flex-direction: column;
+        align-items: center;
+        dt {
+          margin-right: 0;
+        }
+        dd {
+          &:not(:last-of-type) { margin-bottom: 16px; }
+        }
+      }
+    }
+  }
+}
+
+@include mq(large) {
+  .course-list {
+    .course { 
+      .prices {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 16px;
+        dt {
+          flex-basis: 25%;
+          text-align: right;
+        }
+        dd {
+          flex-basis: 60%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
