@@ -1,0 +1,41 @@
+.fixedBottom{
+  display: none;
+  @include tab {
+    display: grid;
+    width: 100vw;
+    height: clamp(  106rem, 21vw, 154px);
+    grid-template-columns: repeat(3,1fr);
+    gap: 16rem;
+    padding: 16rem 8rem;
+    background-color: $navy;
+  }
+  &.fixed{
+    top: unset;
+    bottom: 0;
+  }
+  &__list{
+    height: 100%;
+    &--button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp( 4px, 2vw, 12px);
+      height: 100%;
+      padding: 0 0.4em;
+      background-color: #fff;
+      border-radius: 8px;
+      img{
+        height: clamp( 40px, 10vw, 70px );
+      }
+      span{
+        color: $navy;
+        font-size: 35rem;
+        font-family: $sans;
+        font-weight: 500;
+        @include sp {
+          font-size: 16rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,225 @@
+@import "mixin";
+
+/* =============================================
+サイズ基準
+============================================= */
+:root {
+  margin: 1px;
+  padding: 1px;
+  font-size: 1px;
+  gap: 1px;
+  @include pc {
+    // 画面幅1280pxを基準として可変
+    margin: calc(100vw / 1280);
+    padding: calc(100vw / 1280);
+    font-size: calc(100vw / 1280);
+    gap: calc(100vw / 1280);
+  }
+  @include tab {
+    // 画面幅768pxを基準として可変
+    margin: calc(100vw / 768);
+    padding: calc(100vw / 768);
+    font-size: calc(100vw / 768);
+    gap: calc(100vw / 768);
+  }
+  @include sp {
+    // 画面幅440pxを基準として可変
+    margin: calc(100vw / 440);
+    padding: calc(100vw / 440);
+    font-size: calc(100vw / 440);
+    gap: calc(100vw / 440);
+  }
+}
+html,body{
+  width: 100%;
+  margin: 0!important;
+  padding: 0!important;
+}
+
+/* =============================================
+フォント種類
+============================================= */
+$ShinMGo-Bold: "A-OTF-UDShinMGoPro-Bold", sans-serif;
+$ShinMGo-Heavy: "A-OTF-UDShinMGoPro-Heavy", sans-serif;
+$yasashisa: "07やさしさゴシックボールド", sans-serif;
+$maruFo : "A-OTF-MaruFoPro-Regular_0", sans-serif;
+$sans: "Noto Sans JP", sans-serif;
+
+$serif: "Noto Serif JP", serif;
+$sawarabiGothic: "Sawarabi Gothic", sans-serif;
+$kakuGothic: "Zen Kaku Gothic Antique", sans-serif;
+$maruGothic: "Zen Maru Gothic", serif;
+
+/* =============================================
+全体に対して
+============================================= */
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior: auto;
+}
+body.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  overflow-x: hidden;
+  background-color: $navy;
+  color: #fff;
+  font-variant-ligatures: none;
+  font-family: $ShinMGo-Bold;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18rem;
+  font-feature-settings: "palt" 1;
+}
+
+/* =============================================
+htmlタグに対して
+============================================= */
+a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  &:hover {
+    color: #888;
+  }
+}
+li {
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* =============================================
+各所共通で使う用
+============================================= */
+.pc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  @include center;
+  @include pc {
+    padding: 0 40rem;
+  }
+  @include tab {
+    padding: 0;
+  }
+}
+.tab-container{
+  @include tab {
+    width: 92%!important;
+    margin: 0 auto;
+  }
+}
+.hidden{
+  display: none!important;
+}
+.sectionTitle{
+  margin-bottom: 16rem;
+  color: #fff;
+  font-size: 77rem;
+  text-shadow:
+    0 0 6px #c60576,
+    0 0 17px #c60576,
+    0 0 24px #c60576,
+    0 0 6px #f96efb,
+    0 0 22px #f96efb,
+    0 0 24px #f96efb;
+  text-align: center;
+  @include tab {
+    font-size: 43rem;
+  }
+  @include sp {
+    margin-bottom: 8rem;
+    font-size: 21rem;
+  }
+}
+.sectionLine{
+  display: flex;
+  width: 96%;
+  margin: 0 auto;
+}
+
+/* =============================================
+レスポンシブ対応用
+============================================= */
+.pc {
+  display: block !important;
+  @include tab {
+    display: none !important;
+  }
+}
+.tab {
+  display: none !important;
+  @include tab {
+    display: block !important;
+  }
+}
+.tab-inline {
+  display: none !important;
+  @include tab {
+    display: inline !important;
+  }
+}
+.sp {
+  display: none !important;
+  @include sp {
+    display: block !important;
+  }
+}
+.sp-inline {
+  display: none !important;
+  @include sp {
+    display: inline !important;
+  }
+}
+.noTab{
+  @include tab {
+    display: none!important;
+  }
+}
+
+/* =============================================
+フレックス要素用
+============================================= */
+.flex {
+  @include flex;
+}
+
+.flex-low {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  @include flex-center;
+}
+
+.flex-around {
+  @include flex-around;
+}
+
+/* =============================================
+固定表示用
+============================================= */
+.fixed {
+  position: fixed !important; 
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+}
+.hidden {
+  opacity: 0; /* 非表示状態 */
+}
+
+/* =============================================
+ボタンで表示・非表示JSで値操作
+============================================= */
+[data-display="hide"] {
+  display: none;
+}
+
+[data-display="show"] {
+  display: block;
+}

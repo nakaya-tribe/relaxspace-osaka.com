@@ -1,0 +1,12 @@
+@import "mixin";
+
+.bg{
+  width: 100%;
+  background-size: cover;
+  background-position: 0%;
+}
+@for $i from 1 through 4 {
+  .bg0#{$i} {
+    background-image: url(./../img/bg_pc0#{$i}.jpg);
+  }
+}

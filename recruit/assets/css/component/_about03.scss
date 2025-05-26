@@ -1,0 +1,46 @@
+.about{
+  .about03{
+    padding-bottom: 64rem;
+    &__set{
+      width: clamp( 0px, 80vw, 960px );
+      margin: 0 auto 80rem;
+      @include tab {
+        width: 96%;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &--top{
+        height: clamp( 130px, 21.6vw, 260px );
+        margin: 0 auto 8rem;
+        text-align: center;
+        @include tab {
+          height: clamp( 80px, 26.6vw, 200px );
+        }
+        img{
+          height: 100%;
+        }
+      }
+      &--bottom{
+        padding: 24rem 0;
+        background-color: #fff;
+        border-radius: 8px;
+        p{
+          color: #0123b5;
+          font-size: 46rem;
+          line-height: 1.4;
+          text-shadow:
+            0 0 7px rgba(255, 255, 255, 0.5),
+            -1.2px 1.6px 8px rgba(0, 186, 239, 1);
+          text-align: center;
+          @include tab {
+            font-size: 32rem;
+          }
+          @include sp {
+            font-size: 16rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.about{
+  .about02{
+    font-size: 56rem;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    text-align: center;
+    @include tab {
+      font-size: 38rem;
+    }
+    @include sp {
+      font-size: 18rem;
+    }
+    &__text{
+      margin-bottom: 1em;
+    }
+    &__arrow{
+      margin: 0 auto 32rem;
+      @include tab {
+        width: 48%;
+      }
+    }
+  }
+}

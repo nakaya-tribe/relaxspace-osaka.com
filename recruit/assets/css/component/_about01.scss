@@ -1,0 +1,47 @@
+.about{
+  .about01{
+    position: relative;
+    width: clamp( 0px, 83vw, 1000px );
+    height: clamp( 300px, 45vw, 540px );
+    margin: 0 auto;
+    &__image{
+      position: absolute;
+      width: 80%;
+      height: auto;
+      right: 0%;
+      top: 0;
+    }
+    &__text{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 16rem;
+      left: 0%;
+      bottom: 12%;
+      span{
+        font-size: 74rem;
+        transform: rotate(-2deg);
+        text-shadow:
+        0 0 10px #ff00b4,
+        0 0 20px #ff00b4,
+        0 0 27px #ff00b4,
+        3px 3px 24px rgba(0, 0, 0, 1);
+        @include tab {
+          font-size: 50rem; 
+        }
+        @include sp {
+          font-size: 24rem;
+        }
+        &:nth-child(1){
+          padding-left: 0;
+        }
+        &:nth-child(2){
+          padding-left: 2em;
+        }
+        &:nth-child(3){
+          padding-left: 1em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+/* =============================================
+ハンバーガーボタン
+============================================= */
+.hamburger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: calc(12vw / (768 / 100));
+  &:hover{
+    cursor: pointer;
+  }
+  span {
+    width: calc(57vw / (768 / 100));
+    height:calc(10vw / (768 / 100));
+    background: $navy;
+    border-radius: 1em;
+    &:first-child {
+      transition: transform 0.3s ease;
+    }
+    &:nth-of-type(2){
+      transition: opacity 0.3s ease;
+    }
+    &:last-child {
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+  }
+  &-active{
+    width: calc(56vw / (768 / 100));
+    &:nth-of-type(1){
+      position: absolute;
+      top:calc(0vw / (768 / 100));
+      transform:rotate(-45deg);
+    }
+    &:nth-of-type(2){
+      position: absolute;
+      top:calc(0vw / (768 / 100));
+      transform: rotate(45deg);
+    }
+    &:nth-of-type(3){
+      background-color: transparent;
+    }
+  }
+}
+
+/* =============================================
+ハンバーガーメニュー中身
+============================================= */
+.hamNav{
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: $navy;
+  color: #fff;
+  transition: 0.6s all ease-out;
+  z-index: 90;
+  overflow-x: hidden;
+  @include tab{
+    display: flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-active {
+    left: 0 !important;
+  }
+}

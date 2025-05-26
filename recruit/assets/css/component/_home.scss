@@ -1,0 +1,9 @@
+.home{
+  &__inner{
+    width: 80%;
+    margin: 0 auto;
+    @include tab {
+      width: 100%;
+    }
+  }
+}

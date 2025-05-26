@@ -1,0 +1,28 @@
+.header{
+  width: 100%;
+  padding-top: 40rem;
+  padding-bottom: 88rem;
+  @include tab {
+    padding-top: 20rem;
+    padding-bottom: 44rem;
+  }
+  &.fixed{
+    padding: 0;
+    background-color: rgba( $navy, 0.8 );
+  }
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--logo{
+      width: clamp( 360px, 60vw, 720px );
+      padding: 8rem 12rem;
+      @include tab {
+        width: 90%;
+      }
+    }
+    &--nav{
+      width: 100%;
+    }
+  }
+}

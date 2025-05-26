@@ -1,0 +1,30 @@
+.assurance{
+  padding-top: 80rem;
+  padding-bottom: 120rem;
+  @include sp {
+    padding-top: 40rem;
+    padding-bottom: 40rem;
+  }
+  &__top{
+    width: 100%;
+    margin-top: 80rem;
+    margin-bottom: 104rem;
+    @include sp {
+      margin-top: 40rem;
+      margin-bottom: 40rem;
+    }
+  }
+  &__middle{
+    width: 80%;
+    margin: 0 auto 80rem;
+    @include sp {
+      margin-bottom: 40rem;
+    }
+  }
+  &__bottom{
+    width: 100%;
+    @include tab {
+      padding: 0 8rem;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.about{
+  .about04{
+    padding-bottom: 64rem;
+    &__top{
+      margin-bottom: 1em;
+      font-size: 46rem;
+      font-weight: 900;
+      line-height: 1.6;
+      text-align: center;
+      @include tab {
+        font-size: 31rem;
+      }
+      @include sp {
+        font-size: 15rem;
+      }
+    }
+    &__bottom{
+      font-size: 76rem;
+      text-shadow:
+        0 0 9px rgba(255, 0, 144, 0.72),
+        -1.8px 2.4px 8px rgba(255, 0, 144, 0.72);
+      text-align: center;
+      @include tab {
+        font-size: 52rem;
+      }
+      @include sp {
+        font-size: 26rem;
+      }
+    }
+  }
+}

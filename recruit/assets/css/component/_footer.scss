@@ -1,0 +1,61 @@
+.footer{
+  width: 100%;
+  padding-bottom: 16rem;
+  &__top{
+    margin-bottom: 40rem;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 120rem;
+    @include tab {
+      flex-direction: column;
+      margin-bottom: 40rem;
+    }
+    &--logo{
+      width: 44%;
+      min-width: 240px;
+      @include tab {
+        margin-bottom: 32rem;
+      }
+    }
+    &--saleSite{
+      width: 44%;
+      min-width: 240px;
+      a{
+        display: block;
+        width: 100%;
+        padding: 16rem 0;
+        background-color: #fff;
+        color: $navy;
+        text-shadow:
+          0 0 4px rgba(255, 255, 255, 1),
+          0 0 8px rgba(115, 207, 255, 1);
+        font-size: 22rem;
+        font-weight: 500;
+        font-family: $sans;
+        letter-spacing: 0.05em;
+        text-align: center;
+        &:hover{
+          background-color: rgba($color: #fff, $alpha: 0.1);
+          color: #fff;
+          border: 1px solid #ddd;
+        }
+      }
+    }
+  }
+  &__banner{
+    padding: 32rem 0;
+  }
+  &__copyright{
+    padding: 32px 0;
+    text-align: center;
+    font-family: $sans;
+    font-weight: 400;
+    @include sp {
+      font-size: 14rem;
+    }
+  }
+}

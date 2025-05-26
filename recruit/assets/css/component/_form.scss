@@ -1,0 +1,335 @@
+.form {
+  padding-top: 120rem;
+  @include tab {
+    padding-top: 20rem;
+  }
+  &__list {
+    @include tab {
+      margin-bottom: 56rem;
+    }
+  }
+  .formList {
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    margin-bottom: 48rem;
+    padding-left: 72rem;
+    padding-right: 160rem;
+    @include tab {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24rem;
+      padding: 0 20rem;
+    }
+    &__title {
+      align-content: center;
+      @include tab {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 8rem;
+      }
+      @include sp {
+        margin-bottom: 4rem;
+      }
+      .title {
+        font-size: 28rem;
+        font-weight: 300;
+        font-family: $serif;
+        align-content: center;
+        @include tab {
+          font-size: 28rem;
+          font-family: $maruFo;
+        }
+        @include sp {
+          font-size: 18rem;
+        }
+        &.title-area{
+          @include tab {
+            margin-bottom: 32rem;
+          }
+          @include tab {
+            margin-bottom: 16rem;
+          }
+        }
+      } 
+    }
+    &__content {
+      display: flex;
+      align-items: center;
+      input,
+      label,
+      textarea{
+        font-size: 28rem;
+        font-weight: 300;
+        font-family: $sans;
+        @include sp {
+          font-size: 18rem;
+        }
+      }
+      input,
+      textarea{
+        padding: 0.4em;
+        background-color: #fff;
+        @include tab {
+          padding: 0.6em
+        }
+      }
+      input {
+        width: clamp( 300px, 40vw , 530px );
+        @include tab {
+          width: 100%;
+        }
+        &.age{
+          width: clamp( 80px, 20vw , 136px );
+          @include tab {
+            width: 100%;
+          }
+        }
+      }
+      textarea {
+        width: 100%;
+        height: clamp( 160px, 28vw , 365px );
+        padding: 0.8em;
+        @include tab {
+          width: 100%;
+          height: clamp( 200px, 60vw , 424px );
+        }
+      }
+    }
+  }
+  &__submit {
+    text-align: center;
+    &--button{
+      width: clamp(  400px, 80vw, 516px );
+      padding: 0.3em 0em 0.3em 1em;
+      background-color: #fff;
+      border-radius: 8rem;
+      color: $navy;
+      font-size: 35rem;
+      font-weight: 300;
+      font-family: $serif;
+      letter-spacing: 1em;
+      @include tab {
+        width: clamp(  200px, 60vw, 400px );
+        font-size: 43rem;
+        font-family: $sans;
+      }
+      @include sp {
+        border-radius: 4rem;
+        font-size: 22rem;
+      }
+    }
+  }
+}
+
+/* =============================================
+「必須」マーク
+============================================= */
+.markRequired {
+  display: inline-flex;
+  align-items: center;
+  height: 80%;
+  margin-left: 0.8em;
+  padding: 0.2em 0.4em;
+  background-color: $red;
+  border-radius: 8rem;
+  font-size: 36rem;
+  font-weight: 300;
+  font-family: $serif;
+  @include tab {
+    height: 100%;
+    margin-left: 0.4em;
+    padding: 0.2em 0.6em;
+    font-size: 23rem;
+  }
+  @include sp {
+    font-size: 18rem;
+  }
+}
+/* =============================================
+エラーメッセージ
+============================================= */
+.form{
+  .error {
+    display: block;
+    color: red;
+    font-size: 36rem;
+    font-weight: 300;
+    font-family: $serif;
+  }
+}
+/* =============================================
+ラジオボタン
+============================================= */
+.form-radio{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  @include tab {
+    flex-wrap: wrap;
+  }
+  .form-radio__list{
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    @include tab {
+      width: calc( 100% / 3 );
+      margin-bottom: 32rem;
+    }
+    input[type=radio]{
+      width: clamp( 18px, 2.4vw, 29px );
+      height: clamp( 18px, 2.4vw, 29px );
+      @include tab {
+        width: clamp( 20px, 5vw, 38px );
+      height: clamp( 20px, 5vw, 38px );
+      }
+      position: relative;
+      &:hover{
+        cursor: pointer;
+      }
+      &::before,&::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #666666;
+        transform: translateY(-50%);
+        top: 50%;
+      }
+      &::before{
+        background-color: #666666;
+      }
+      &::after{
+        width: 40%;
+        height: 40%;
+        background-color: #ddd;
+        opacity: 0;
+        left: 30%;
+      }
+      &:checked{
+        &::after{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+/* =============================================
+recaptcha badge
+============================================= */
+.grecaptcha-badge{
+  margin-bottom:var(--recaptcha-badge-position);
+  z-index:9999;
+  @include tab {
+    display: none;
+  }
+}
+@media(min-width:992px){
+  .grecaptcha-badge{
+      margin-bottom:0;
+  }
+}
+/********************************************
+* Now Loading
+********************************************/
+.form{
+  #form-load {
+    display: none;
+  }
+  .loader {
+    margin: 0 auto;
+    border: 12px solid #fafafa;
+    border-radius: 50%;
+    border-top: 12px solid #3498db;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .load1 {
+    animation: sk-scaleout 1s infinite ease-in-out;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 201;
+    text-align: center;
+    background-color: #b1b1b1;
+    color: #ffffff;
+    opacity: 0.8;
+    width: 800px;
+    p {
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+  #result{
+    text-align: center;
+    margin: 0px auto;
+    @include pc {
+      margin:calc(80vw / (1280 / 100)) auto;
+    }
+
+    h4{
+      margin-bottom: 45px;
+      font-size:36px;
+      @include pc {
+        margin-bottom:calc(40vw / (1280 / 100));
+        font-size:calc(47vw / (1280 / 100));
+      }
+      @include tab {
+        margin-bottom:calc(36vw / (768 / 100));
+        font-size:calc(38vw / (768 / 100));
+        letter-spacing: 0.08em;
+        font-weight: bold;
+      }
+    }
+    p{
+      padding-bottom: 50px;
+      font-size: 20px;
+      @include pc {
+        font-size:calc(31vw / (1280 / 100));
+      }
+      @include tab {
+        font-size:calc(30vw / (768 / 100));
+        line-height: 1.4;
+        padding-bottom:calc(50vw / (768 / 100));
+      }
+    }
+  }
+  .space{
+    height: 30px;
+      @include pc {
+      height:calc(30vw / (1280 / 100));
+    }
+    @include tab {
+      height:calc(10vw / (768 / 100));
+    }
+  }
+  &__confirm{
+    text-align: center;
+    &--title{
+      display: inline-block;
+      margin-bottom: 1em;
+      background:linear-gradient(transparent 80%, #ff6 80%);
+      font-size: 32rem;
+    }
+    &--text{
+      font-size: 24rem;
+      @include sp {
+        font-size: 18rem;
+      }
+    }
+  }
+
+}
