@@ -25,6 +25,21 @@
         padding: 24rem 0;
         background-color: #fff;
         border-radius: 8px;
+        position: relative;
+        &:after{
+          position: absolute;
+          content: "";
+          border: 1px solid #66ccff;
+          border-radius: 8px;
+          top: 4px;
+          bottom: 4px;
+          left: 4px;
+          right: 4px;
+          box-shadow: 
+            0 0 1px #66ccff,
+            0 0 4px #66ccff,
+            0 0 8px #66ccff;
+        }
         p{
           color: #0123b5;
           font-size: 46rem;
