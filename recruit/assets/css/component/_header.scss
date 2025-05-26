@@ -16,9 +16,10 @@
     align-items: center;
     &--logo{
       width: clamp( 360px, 60vw, 720px );
-      padding: 8rem 12rem;
+      padding: 0rem 12rem;
       @include tab {
         width: 90%;
+        padding: 8rem 12rem;
       }
     }
     &--nav{
