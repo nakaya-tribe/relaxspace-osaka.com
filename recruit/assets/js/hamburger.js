@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
         hamNav.classList.toggle("hamNav-active");
         hamburgerSpans.forEach(span => span.classList.toggle("hamburger-active"));
         body.classList.toggle("no-scroll");
-        hamburger.classList.toggle("fixedBg");
       });
     }
 
@@ -24,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
         hamNav.classList.toggle("hamNav-active");
         hamburgerSpans.forEach(span => span.classList.toggle("hamburger-active"));
         body.classList.toggle("no-scroll");
-        hamburger.classList.add("fixedBg");
       });
     });
   }
