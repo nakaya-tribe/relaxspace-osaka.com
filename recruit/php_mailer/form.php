@@ -38,7 +38,7 @@ $_SESSION['key'] = $token;
           <label class="title">年齢</label>
           <span class="markRequired tab-inline">必須</span>
         </div>
-        <div class="formList__content">
+        <div class="formList__content formContentAge">
           <input type="number" class="age required" name="age" value="" min="18">
           <span class="markRequired noTab">必須</span>
         </div>

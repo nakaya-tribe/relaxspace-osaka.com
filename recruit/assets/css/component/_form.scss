@@ -55,6 +55,7 @@
     &__content {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       input,
       label,
       textarea{
@@ -152,8 +153,9 @@
 .form{
   .error {
     display: block;
+    width: 100%;
     color: red;
-    font-size: 36rem;
+    font-size: 24rem;
     font-weight: 300;
     font-family: $serif;
   }
