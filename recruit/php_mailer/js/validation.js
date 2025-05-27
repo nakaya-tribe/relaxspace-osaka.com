@@ -6,7 +6,6 @@ export const validation = () => {
     //エラーを表示する span 要素に付与するクラス名（エラー用のクラス）
     const errorClassName = "error";
     const maxlengthElems = document.querySelectorAll(".maxlength");
-    const emailElems = document.querySelectorAll(".email");
     const telElems = document.querySelectorAll(".telephone");
     const ageElems = document.querySelectorAll(".age");
     const requiredElems = document.querySelectorAll(".required");
@@ -38,17 +37,6 @@ export const validation = () => {
         if (elem.value !== "") {
           if (elem.value.length > maxlength) {
             createError(elem, maxlength + "文字以内でご入力ください");
-          }
-        }
-      });
-
-      //.email を指定した要素を検証
-      emailElems.forEach((elem) => {
-        const pattern =
-          /^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/iu;
-        if (elem.value !== "") {
-          if (!pattern.test(elem.value)) {
-            createError(elem, "Emailアドレスの形式が正しくないようです。");
           }
         }
       });

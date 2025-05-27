@@ -28,7 +28,7 @@ $_SESSION['key'] = $token;
           <span class="markRequired tab-inline">必須</span>
         </div>
         <div class="formList__content">
-          <input type="telephone" name="telephone" value="" size="40" id="telephone" class="telephone" placeholder="">
+          <input type="telephone" name="telephone" value="" size="40" id="telephone" class="telephone required" placeholder="">
           <span class="markRequired noTab">必須</span>
         </div>
       </div>
@@ -39,7 +39,7 @@ $_SESSION['key'] = $token;
           <span class="markRequired tab-inline">必須</span>
         </div>
         <div class="formList__content">
-          <input type="number" class="age" name="age" value="" min="18">
+          <input type="number" class="age required" name="age" value="" min="18">
           <span class="markRequired noTab">必須</span>
         </div>
       </div>

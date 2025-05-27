@@ -12,11 +12,9 @@ if (!isset($_POST['token'])) {
 }
 if ($_SESSION['key'] === $_POST['token']) {
   $name = $_POST['name'];
-  $tel = $_POST['tel'];
-  $email = $_POST['email'];
   $telephone = $_POST['telephone'];
   $age = $_POST['age'];
-  $paper = $_POST['paper'];
+  $location = $_POST['location'];
   $text = $_POST['text'];
 
   require 'vendor/autoload.php';
@@ -54,20 +52,17 @@ if ($_SESSION['key'] === $_POST['token']) {
     $mail->Body  = mb_convert_encoding("
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br>
 
-【 氏名 】<br>
+【 お名前(仮名可) 】<br>
 {$name}<br>
 <br>
-【 メールアドレス 】<br>
-{$email}<br>
-<br>
-【 電話番号 】<br>
+【 電話番号(半角) 】<br>
 {$telephone}<br>
 <br>
 【 年齢 】<br>
 {$age}<br>
 <br>
-【 身分証 】<br>
-{$paper}<br>
+【 希望勤務地 】<br>
+{$location}<br>
 <br>
 【 質問など 】<br>
 {$text}<br>
