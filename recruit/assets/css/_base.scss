@@ -34,6 +34,7 @@ html,body{
   width: 100%;
   margin: 0!important;
   padding: 0!important;
+  overflow-x: hidden;
 }
 
 /* =============================================
@@ -57,10 +58,6 @@ html {
   scroll-behavior: smooth;
   overscroll-behavior: auto;
 }
-body.no-scroll {
-  height: 100%;
-  overflow: hidden;
-}
 body {
   overflow-x: hidden;
   background-color: $navy;
@@ -71,6 +68,10 @@ body {
   font-style: normal;
   font-size: 18rem;
   font-feature-settings: "palt" 1;
+  &.no-scroll {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 /* =============================================
