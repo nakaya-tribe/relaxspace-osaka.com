@@ -9,7 +9,6 @@ export const validation = () => {
     const telElems = document.querySelectorAll(".telephone");
     const ageElems = document.querySelectorAll(".age");
     const requiredElems = document.querySelectorAll(".required");
-    const checkElems = document.querySelectorAll(".check");
 
     //エラーメッセージを表示する span 要素を生成して親要素に追加する関数
     //elem ：対象の要素

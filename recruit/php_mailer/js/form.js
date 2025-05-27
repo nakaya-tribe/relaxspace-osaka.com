@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // フォームの入力値を取得
     const formData = new FormData(form);
-    const formDataObj = Object.fromEntries(formData.entries());
 
     if (document.querySelector("span.error")) {
       document.getElementById("form-load").style.display = "none";
