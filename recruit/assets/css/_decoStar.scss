@@ -142,7 +142,7 @@
     transform: translate(100%,-100%);
     @include tab {
       width: 13.3vw;
-      top: -60vw;
+      top: -70vw;
       left: unset;
       right: 0;
       transform: translate(40%,0%);
@@ -232,7 +232,7 @@
     transform: translate(100%,0%);
     @include tab {
       width: 13.3vw;
-      top: -40vw;
+      top: -30vw;
       right: unset;
       left: 0px;
       transform: translate(-60%,0%);

@@ -17,7 +17,8 @@
   &__middle{
     width: 80%;
     margin: 0 auto 80rem;
-    @include sp {
+    @include tab {
+      width: 90%;
       margin-bottom: 40rem;
     }
   }
