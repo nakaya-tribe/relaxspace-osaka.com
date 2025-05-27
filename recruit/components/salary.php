@@ -1,14 +1,14 @@
 <section class="salary" id="salary">
   <div class="salary__inner pc-container tab-container">
 
-    <div class="deco-star deco-star10"></div>
+    <div class="decoStar decoStar10"></div>
     <h2 class="sectionTitle">お仕事・お給料について</h2>
     <div class="sectionLine">
       <img src="<?php echo $path; ?>assets/img/sectionTitle_line.png" alt="">
     </div>
-    <div class="deco-star deco-star11"></div>
-    <div class="deco-star deco-star12"></div>
-    <div class="deco-star deco-star19 tab"></div>
+    <div class="decoStar decoStar11"></div>
+    <div class="decoStar decoStar12"></div>
+    <div class="decoStar decoStar19 tab"></div>
 
     <?php
     $courses = [
@@ -48,12 +48,12 @@
       </section>
     <?php endforeach; ?>
 
-    <div class="deco-star deco-star13 noTab"></div>
+    <div class="decoStar decoStar13 noTab"></div>
     <p class="salary__text">
       全てをこなさなくてもOK!<br>
       自分ができるコースのみで構いません♪
     </p>
-    <div class="deco-star deco-star14"></div>
+    <div class="decoStar decoStar14"></div>
 
   </div>
 </section>

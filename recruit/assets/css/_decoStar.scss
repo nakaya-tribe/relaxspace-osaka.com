@@ -1,6 +1,6 @@
 @import "mixin";
 
-.deco-star{
+.decoStar{
   height: 0.1px;
   position: relative;
   &::before{
@@ -15,7 +15,7 @@
   }
 }
 @for $i from 1 through 21 {
-  .deco-star#{$i} {
+  .decoStar#{$i} {
     &::before{
       background-image: url(../img/deco/deco_star#{$i}.svg);
       background-size: contain;
@@ -25,7 +25,7 @@
   }
 }
 
-.deco-star1{
+.decoStar1{
   &::before{
     width: 273px;
     height: 166px;
@@ -41,7 +41,7 @@
     }
   }
 }
-.deco-star2{
+.decoStar2{
   &::before{
     width: 290px;
     height: 310px;
@@ -57,7 +57,7 @@
     }
   }
 }
-.deco-star3{
+.decoStar3{
   &::before{
     width: 237px;
     height: 320px;
@@ -73,7 +73,7 @@
     }
   }
 }
-.deco-star4{
+.decoStar4{
   &::before{
     width: 415px;
     height: 400px;
@@ -89,7 +89,7 @@
     }
   }
 }
-.deco-star5{
+.decoStar5{
   &::before{
     width: 333px;
     height: 344px;
@@ -101,7 +101,7 @@
     }
   }
 }
-.deco-star6{
+.decoStar6{
   &::before{
     width: 322px;
     height: 391px;
@@ -117,7 +117,7 @@
     }
   }
 }
-.deco-star7{
+.decoStar7{
   &::before{
     width: 318px;
     height: 341px;
@@ -133,7 +133,7 @@
     }
   }
 }
-.deco-star8{
+.decoStar8{
   &::before{
     width: 247px;
     height: 278px;
@@ -149,7 +149,7 @@
     }
   }
 }
-.deco-star9{
+.decoStar9{
   &::before{
     width: 384px;
     height: 234px;
@@ -165,7 +165,7 @@
     }
   }
 }
-.deco-star10{
+.decoStar10{
   &::before{
     width: 254px;
     height: 355px;
@@ -177,7 +177,7 @@
     }
   }
 }
-.deco-star11{
+.decoStar11{
   &::before{
     width: 298px;
     height: 283px;
@@ -189,7 +189,7 @@
     }
   }
 }
-.deco-star12{
+.decoStar12{
   &::before{
     width: 384px;
     height: 234px;
@@ -198,7 +198,7 @@
     transform: translate(-100%,0);
   }
 }
-.deco-star13{
+.decoStar13{
   &::before{
     width: 248px;
     height: 377px;
@@ -214,7 +214,7 @@
     }
   }
 }
-.deco-star14{
+.decoStar14{
   &::before{
     width: 254px;
     height: 285px;
@@ -223,7 +223,7 @@
     transform: translate(-100%,0);
   }
 }
-.deco-star15{
+.decoStar15{
   &::before{
     width: 368px;
     height: 380px;
@@ -239,7 +239,7 @@
     }
   }
 }
-.deco-star16{
+.decoStar16{
   &::before{
     width: 360px;
     height: 437px;
@@ -251,7 +251,7 @@
     }
   }
 }
-.deco-star17{
+.decoStar17{
   &::before{
     width: 356px;
     height: 381px;
@@ -267,7 +267,7 @@
     }
   }
 }
-.deco-star18{
+.decoStar18{
   &::before{
     width: 356px;
     height: 381px;
@@ -279,7 +279,7 @@
     }
   }
 }
-.deco-star19{
+.decoStar19{
   &::before{
     @include tab {
       width: 24vw;
@@ -291,7 +291,7 @@
     }
   }
 }
-.deco-star20{
+.decoStar20{
   &::before{
     @include tab {
       width: 16vw;
@@ -303,7 +303,7 @@
     }
   }
 }
-.deco-star21{
+.decoStar21{
   &::before{
     @include tab {
       width: 16vw;
