@@ -6,6 +6,7 @@
       margin: 0 auto 80rem;
       @include tab {
         width: 96%;
+        margin-bottom: 40rem;
       }
       &:last-child{
         margin-bottom: 0;

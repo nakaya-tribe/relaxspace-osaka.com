@@ -2,8 +2,11 @@
   .about01{
     position: relative;
     width: clamp( 0px, 83vw, 1000px );
-    height: clamp( 300px, 45vw, 540px );
+    height: clamp( 0px, 45vw, 540px );
     margin: 0 auto;
+    @include tab {
+      margin-top: 40rem;
+    }
     &__image{
       position: absolute;
       width: 80%;

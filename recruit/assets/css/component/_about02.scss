@@ -12,6 +12,9 @@
     }
     &__text{
       margin-bottom: 1em;
+      @include tab {
+        margin-bottom: 2em;
+      }
     }
     &__arrow{
       margin: 0 auto 32rem;
