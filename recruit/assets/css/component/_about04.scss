@@ -26,6 +26,33 @@
       @include sp {
         font-size: 26rem;
       }
+      span{
+        position: relative;
+        &::before,&::after{
+          position: absolute;
+          content: "";
+          width: 80px;
+          height: 100px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          @include tab {
+            width: 8vw;
+            height: 10vw;
+          }
+        }
+        &::before{
+          bottom: 0;
+          left: 0;
+          transform: translate(-180%,0);
+          background-image: url(../img/about04_deco01.png);
+        }
+        &::after{
+          top: 0;
+          right: 0;
+          transform: translate(90%,-10%);
+          background-image: url(../img/about04_deco02.png);
+        }
+      }
     }
   }
 }
