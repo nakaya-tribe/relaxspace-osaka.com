@@ -1,5 +1,7 @@
 <div class="about03">
   <div class="about03__set">
+    <div class="decoIllust decoIllust1 noTab"></div>
+    <div class="decoIllust decoIllust2 tab"></div>
     <div class="about03__set--top">
       <img src="<?php echo $path; ?>assets/img/about03_top01.png" alt="入店祝い金10万円ご用意">
     </div>
@@ -11,6 +13,7 @@
     </div>
   </div>
   <div class="about03__set">
+    <div class="decoIllust decoIllust1 tab"></div>
     <div class="about03__set--top">
       <img src="<?php echo $path; ?>assets/img/about03_top02.png" alt="オプション一切なし！">
     </div>
@@ -22,6 +25,7 @@
     </div>
   </div>
   <div class="about03__set">
+    <div class="decoIllust decoIllust2 noTab"></div>
     <div class="about03__set--top">
       <img src="<?php echo $path; ?>assets/img/about03_top03.png" alt="ハンドサービスのお仕事！">
     </div>
@@ -35,6 +39,7 @@
     </div>
   </div>
   <div class="about03__set">
+    <div class="decoIllust decoIllust3 noTab"></div>
     <div class="about03__set--top">
       <img src="<?php echo $path; ?>assets/img/about03_top04.png" alt="完全自由シフト!">
     </div>

@@ -1,0 +1,71 @@
+@import "mixin";
+
+.decoIllust{
+  height: 0.1px;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    @include pc{
+      content: none;
+    }
+    @include tab {
+      content: "";
+    }
+  }
+}
+@for $i from 1 through 3 {
+  .decoIllust#{$i} {
+    &::before{
+      background-image: url(../img/deco/deco_illust#{$i}.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}
+
+.decoIllust1{
+  &::before{
+    width: 345px;
+    height: 345px;
+    top: 0px;
+    left: -20px;
+    transform: translate(-100%,0);
+    @include tab {
+      width: 21vw;
+      top: 0;
+      right: unset;
+      left: 0;
+      transform: translate(-20%,0%);
+    }
+  }
+}
+.decoIllust2{
+  &::before{
+    width: 320px;
+    height: 338px;
+    top: 80px;
+    right: 0px;
+    transform: translate(100%,0);
+    @include tab {
+      width: 20vw;
+      top: -20vw;
+      left: unset;
+      right: 0;
+      transform: translate(40%,0%);
+    }
+  }
+}
+.decoIllust3{
+  &::before{
+    width: 342px;
+    height: 272px;
+    top: 0px;
+    left: 0px;
+    transform: translate(-100%,0);
+    @include tab {
+      content: none;
+    }
+  }
+}
