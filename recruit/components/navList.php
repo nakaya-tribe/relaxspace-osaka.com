@@ -1,6 +1,6 @@
 <ul class="navList">
   <li class="navList__list">
-    <a href="#header" class="navList__list--link navLink hamNavLink lampActive">
+    <a href="#top" class="navList__list--link navLink hamNavLink lampActive">
       <span>TOP</span>
     </a>
   </li>

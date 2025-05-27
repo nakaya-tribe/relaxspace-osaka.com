@@ -1,5 +1,5 @@
 <?php include $path . 'components/head.php'; ?>
-<div class="bg bg01">
+<div class="bg bg01" id="top">
   <?php include $path . 'components/header.php'; ?>
   <?php include $path . './components/home.php'; ?>
 </div>
