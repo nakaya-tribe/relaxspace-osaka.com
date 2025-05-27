@@ -1,9 +1,13 @@
 .home{
   &__inner{
-    width: 80%;
+    max-width: 1600px;
     margin: 0 auto;
+    @include center;
+    @include pc {
+      padding: 0 40rem;
+    }
     @include tab {
-      width: 100%;
+      padding: 0;
     }
   }
 }
