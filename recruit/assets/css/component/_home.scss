@@ -2,6 +2,8 @@
   &__inner{
     max-width: 1600px;
     margin: 0 auto;
+    padding-top: 100rem;
+    padding-bottom: 100rem;
     @include center;
     @include pc {
       padding: 0 40rem;
