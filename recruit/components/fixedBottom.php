@@ -1,6 +1,6 @@
 <ul class="fixedBottom">
   <li class="fixedBottom__list">
-    <a class="fixedBottom__list--button" href="tel:0120-946-445">
+    <a class="fixedBottom__list--button" href="tel:0120-946-147">
       <img class="icon-tel" src="<?php echo $path; ?>assets/img/icon_tel.svg" alt="">
       <span>電話</span>
     </a>
