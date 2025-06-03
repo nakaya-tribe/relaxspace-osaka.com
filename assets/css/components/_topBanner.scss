@@ -7,10 +7,16 @@
     margin-bottom: 0;
     padding: 64rem 40rem;
   }
+  @include sp {
+    padding: 32rem 32rem 8rem;
+  }
   .topBannerSwiper {
     width: 100%; 
-    padding-bottom: 2.4em;
+    padding-bottom: 1.6em;
     overflow: hidden;
+    @include tab {
+      padding-bottom: 1em;
+    }
     .swiper-wrapper {
       display: flex;
       margin-bottom: 24rem;

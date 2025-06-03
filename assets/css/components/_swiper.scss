@@ -13,6 +13,9 @@
   left: 0;
   right: 0;
   text-align: center;
+  @include sp {
+    bottom: 10px!important;
+  }
 }
 .swiper-pagination-bullet{
   width: 14px;
@@ -31,8 +34,8 @@
     background-color: #c8c8c8;
   }
   @include sp {
-    width:calc(14vw / (440 / 100));
-    height:calc(14vw / (440 / 100));
+    width:calc(20vw / (440 / 100));
+    height:calc(20vw / (440 / 100));
   }
   &-active{
     background-color: #000!important;

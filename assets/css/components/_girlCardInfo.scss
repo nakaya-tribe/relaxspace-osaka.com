@@ -43,6 +43,11 @@
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: contain;
+        @include tab { 
+          $iconNew-size: clamp( 30px, 12vw, 80px );
+          width: $iconNew-size;
+          height: $iconNew-size;
+        }
       }
     }
   }

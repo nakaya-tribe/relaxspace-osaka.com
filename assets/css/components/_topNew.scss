@@ -12,13 +12,16 @@
     bottom: 0;
     width: 0;
     height: 0;
-    border-top: calc( 600 / 2560 * 100vw) solid #dbd5d8;
+    border-top: calc( 600 / 2560 * 100vw ) solid #dbd5d8;
     border-right: 100vw solid $pink;
     left: 0;
     @include tab {
-      border-top: calc( 800 / 750 * 100vw) solid #dbd5d8;
+      border-top: 104vw solid #dbd5d8;
       border-right: 200vw solid $pink;
       left: -100%;
+    }
+    @include sp {
+      border-top: 112vw solid #dbd5d8;
     }
   }
   &__content{
@@ -26,6 +29,9 @@
     margin: 0 auto;
     padding-top: 48rem;
     padding-bottom: 16rem;
+    @include sp {
+      padding-top: 24rem;
+    }
   }
   .topNewSwiper {
     .swiper-wrapper {
