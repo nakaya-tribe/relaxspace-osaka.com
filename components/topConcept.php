@@ -1,7 +1,7 @@
 <section class="topConcept fadeIn1">
   <div class="topConcept__bgWrapper">
     <div class="topConcept__bg img_res">
-      <img src="<?php echo $path; ?>assets/img/bg_topConcept_pc.png" alt="">
+      <img src="<?php echo $path; ?>assets/img/bg_topConcept_tab.png" alt="">
     </div>
   </div>
   <div class="topConcept__content">

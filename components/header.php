@@ -3,7 +3,7 @@
     <div class="header__top pc-container">
       <h1 class="header__top--logo">
         <a href="<?php echo $path; ?>" class="img_res">
-          <img src="<?php echo $path; ?>assets/img/logo_pc.png" alt="完全素人×恋人オナクラ RelaxSpace">
+          <img src="<?php echo $path; ?>assets/img/logo_tab.png" alt="完全素人×恋人オナクラ RelaxSpace">
         </a>
       </h1>
       <div class="header__top--tel pc">

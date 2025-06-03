@@ -9,7 +9,7 @@
         <img src="<?php echo $path; ?>assets/img/sectionTitle_line.webp" alt="">
       </div>
       <div class="assurance__top img_res">
-        <img src="<?php echo $path; ?>assets/img/assuranceTop_pc.webp" alt="">
+        <img src="<?php echo $path; ?>assets/img/assuranceTop_tab.webp" alt="">
       </div>
       <div class="decoStar decoStar16"></div>
       <div class="decoStar decoStar17 noTab"></div>

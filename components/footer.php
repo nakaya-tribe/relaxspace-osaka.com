@@ -3,7 +3,7 @@
     <div class="footer__top">
       <div class="footer__top--logo noTab">
         <a class="img_res" href="<?php echo $path; ?>">
-          <img src="<?php echo $path; ?>assets/img/logo_pc.png" alt="完全素人×恋人オナクラ RelaxSpace">
+          <img src="<?php echo $path; ?>assets/img/logo_tab.png" alt="完全素人×恋人オナクラ RelaxSpace">
         </a>
       </div>
       <div class="footer__top--tel noTab">
