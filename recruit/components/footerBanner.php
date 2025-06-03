@@ -1,4 +1,4 @@
-<div class="footer__banner">
+<div class="footerBanner">
   <div class="link-banner">
     <a rel="nofollow" href="https://kansai.qzin.jp/relaxspace/?v=official" target="_blank"><img
         src="https://ad.qzin.jp/img/vanilla468-60.gif" width="468" border="0" alt="リラックススペースで稼ぐならバニラ求人"></a>

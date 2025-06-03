@@ -1,0 +1,10 @@
+.footerBanner{
+  .link-banner {
+    width: clamp( 0px, 80vw, 1000px );
+    margin: 50rem auto 80rem;
+    text-align: left;
+    a{
+      vertical-align: top;
+    }
+  }
+}
