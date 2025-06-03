@@ -138,23 +138,6 @@ img {
       }
     }
   }
-  &__toTop{
-    @include tab {
-      padding-top: 80rem;
-      padding-right: 20rem;
-      padding-bottom: 40rem;
-      text-align: right;
-    }
-    a{
-      color: $gray;
-      font-size: 32rem;
-      letter-spacing: 0.2em;
-      text-decoration: underline;
-      @include sp {
-        font-size: 16rem;
-      }
-    }
-  }
 }
 
 /* =============================================

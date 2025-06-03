@@ -71,9 +71,7 @@ include $path . 'components/header.php';
         </ul>
       </div>
     </div>
-    <div class="section__toTop tab">
-      <a href="#header">TOPへ</a>
-    </div>
+
   </section>
 </main>
 <?php include $path . 'components/footer.php'; ?>

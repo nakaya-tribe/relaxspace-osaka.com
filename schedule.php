@@ -23,9 +23,7 @@ include $path . 'components/header.php';
       </div>
       <?php include $path . 'components/girlList.php'; ?>
     </div>
-    <div class="section__toTop tab">
-      <a href="#header">TOPへ</a>
-    </div>
+
   </section>
 </main>
 <?php include $path . 'components/footer.php'; ?>

@@ -12,7 +12,4 @@
       <span class="tab">本日出勤セラピストはコチラから</span>
     </a>
   </div>
-  <div class="section__toTop tab">
-    <a href="#header">TOPへ</a>
-  </div>
 </section>
