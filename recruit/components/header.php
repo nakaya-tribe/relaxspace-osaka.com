@@ -2,7 +2,7 @@
   <div class="header__inner pc-container tab-container">
     <h1 class="header__inner--logo">
       <a href="<?php echo $path; ?>">
-        <img src="<?php echo $path; ?>assets/img/logo.png" alt="">
+        <img src="<?php echo $path; ?>assets/img/logo.webp" alt="">
       </a>
     </h1>
     <div class="header__inner--nav noTab">

@@ -3,7 +3,7 @@
     <div class="decoIllust decoIllust1 noTab"></div>
     <div class="decoIllust decoIllust2 tab"></div>
     <div class="about03__set--top">
-      <img src="<?php echo $path; ?>assets/img/about03_top01.png" alt="入店祝い金10万円ご用意">
+      <img src="<?php echo $path; ?>assets/img/about03_top01.webp" alt="入店祝い金10万円ご用意">
     </div>
     <div class="about03__set--bottom">
       <p>
@@ -15,7 +15,7 @@
   <div class="about03__set">
     <div class="decoIllust decoIllust1 tab"></div>
     <div class="about03__set--top">
-      <img src="<?php echo $path; ?>assets/img/about03_top02.png" alt="オプション一切なし！">
+      <img src="<?php echo $path; ?>assets/img/about03_top02.webp" alt="オプション一切なし！">
     </div>
     <div class="about03__set--bottom">
       <p>
@@ -27,7 +27,7 @@
   <div class="about03__set">
     <div class="decoIllust decoIllust2 noTab"></div>
     <div class="about03__set--top">
-      <img src="<?php echo $path; ?>assets/img/about03_top03.png" alt="ハンドサービスのお仕事！">
+      <img src="<?php echo $path; ?>assets/img/about03_top03.webp" alt="ハンドサービスのお仕事！">
     </div>
     <div class="about03__set--bottom">
       <p>
@@ -41,7 +41,7 @@
   <div class="about03__set">
     <div class="decoIllust decoIllust3 noTab"></div>
     <div class="about03__set--top">
-      <img src="<?php echo $path; ?>assets/img/about03_top04.png" alt="完全自由シフト!">
+      <img src="<?php echo $path; ?>assets/img/about03_top04.webp" alt="完全自由シフト!">
     </div>
     <div class="about03__set--bottom">
       <p>

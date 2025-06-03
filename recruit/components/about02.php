@@ -12,6 +12,6 @@
     こだわっています!
   </p>
   <div class="about02__arrow">
-    <img src="<?php echo $path; ?>assets/img/about_arrow.png" alt="">
+    <img src="<?php echo $path; ?>assets/img/about_arrow.webp" alt="">
   </div>
 </div>

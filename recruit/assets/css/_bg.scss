@@ -12,9 +12,9 @@
 }
 @for $i from 1 through 4 {
   .bg0#{$i} {
-    background-image: url(./../img/bg_pc0#{$i}.jpg);
+    background-image: url(./../img/bg_pc0#{$i}.webp);
     @include tab {
-      background-image: url(./../img/bg_tab0#{$i}.jpg);
+      background-image: url(./../img/bg_tab0#{$i}.webp);
     }
   }
 }

@@ -6,7 +6,7 @@
     <div class="footer__bottom">
       <div class="footer__bottom--logo">
         <a href="<?php echo $path; ?>">
-          <img src="<?php echo $path; ?>assets/img/logo.png" alt="オナクラにイクならリラックススペース">
+          <img src="<?php echo $path; ?>assets/img/logo.webp" alt="オナクラにイクならリラックススペース">
         </a>
       </div>
       <div class="footer__bottom--saleSite">

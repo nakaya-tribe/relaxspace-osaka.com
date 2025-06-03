@@ -4,7 +4,7 @@
     <div class="decoStar decoStar10"></div>
     <h2 class="sectionTitle">お仕事・お給料について</h2>
     <div class="sectionLine">
-      <img src="<?php echo $path; ?>assets/img/sectionTitle_line.png" alt="">
+      <img src="<?php echo $path; ?>assets/img/sectionTitle_line.webp" alt="">
     </div>
     <div class="decoStar decoStar11"></div>
     <div class="decoStar decoStar12"></div>
@@ -37,13 +37,13 @@
     foreach ($courses as $course): ?>
       <section class="salary__section salary__section0<?php echo $course['number']; ?>">
         <h3 class="salary__section--title">
-          <img src="<?php echo $path; ?>assets/img/courseTitle0<?php echo $course['number']; ?>.png" alt="<?php echo $course['title']; ?>">
+          <img src="<?php echo $path; ?>assets/img/courseTitle0<?php echo $course['number']; ?>.webp" alt="<?php echo $course['title']; ?>">
         </h3>
         <p class="salary__section--desc">
           <?php echo $course['desc']; ?>
         </p>
         <div class="salary__section--box">
-          <img src="<?php echo $path; ?>assets/img/salaryPrice0<?php echo $course['number']; ?>.png" alt="">
+          <img src="<?php echo $path; ?>assets/img/salaryPrice0<?php echo $course['number']; ?>.webp" alt="">
         </div>
       </section>
     <?php endforeach; ?>

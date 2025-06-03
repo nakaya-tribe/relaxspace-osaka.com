@@ -6,21 +6,21 @@
       <h2 class="sectionTitle">保証について</h2>
       <div class="decoStar decoStar15 noTab"></div>
       <div class="sectionLine">
-        <img src="<?php echo $path; ?>assets/img/sectionTitle_line.png" alt="">
+        <img src="<?php echo $path; ?>assets/img/sectionTitle_line.webp" alt="">
       </div>
       <div class="assurance__top img_res">
-        <img src="<?php echo $path; ?>assets/img/assuranceTop_pc.png" alt="">
+        <img src="<?php echo $path; ?>assets/img/assuranceTop_pc.webp" alt="">
       </div>
       <div class="decoStar decoStar16"></div>
       <div class="decoStar decoStar17 noTab"></div>
       <div class="decoStar decoStar13 tab"></div>
       <div class="assurance__middle">
-        <img src="<?php echo $path; ?>assets/img/assuranceMiddle.png" alt="">
+        <img src="<?php echo $path; ?>assets/img/assuranceMiddle.webp" alt="">
       </div>
       <div class="decoStar decoStar15 tab"></div>
     </div>
     <div class="assurance__bottom">
-      <img src="<?php echo $path; ?>assets/img/assuranceBottom.png" alt="">
+      <img src="<?php echo $path; ?>assets/img/assuranceBottom.webp" alt="">
     </div>
     <div class="decoStar decoStar18"></div>
     <div class="decoStar decoStar21 tab"></div>
