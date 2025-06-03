@@ -11,6 +11,6 @@
         <img src="<?php echo $path; ?>assets/img/topBanner03.jpg" alt="">
       </div>
     </div>
-    <div class="swiper-pagination topBannerswiper-pagination"></div>
+    <div class="swiper-pagination topBannerSwiper-pagination"></div>
   </div>
 </section>

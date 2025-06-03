@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       disableOnInteraction: false,
     },
     pagination: {
-      el: ".topBannerswiper-pagination",
+      el: ".topBannerSwiper-pagination",
       clickable: true,
     },
     breakpoints: {
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       disableOnInteraction: false,
     },
     pagination: {
-      el: ".topNewswiper-pagination",
+      el: ".topNewSwiper-pagination",
       clickable: true,
     },
     breakpoints: {

@@ -35,5 +35,5 @@ $newGirls = array_filter($girls, function ($girl) {
       </div>
     <?php endforeach; ?>
   </div>
-  <div class="swiper-pagination topNewswiper-pagination"></div>
+  <div class="swiper-pagination topNewSwiper-pagination"></div>
 </div>
