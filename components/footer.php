@@ -13,6 +13,7 @@
     <nav class="footer__nav noTab">
       <?php include $path . 'components/navList.php'; ?>
     </nav>
+    <?php include $path . 'components/footerBanner.php'; ?>
     <div class="footer__copyright">
       <small>Copyright © リラックススペース 2025 All right reserved.</small>
     </div>
