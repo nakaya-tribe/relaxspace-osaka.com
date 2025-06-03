@@ -1,0 +1,45 @@
+.scheduleTab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 16rem;
+  padding: 0.4em;
+  background-color: $lightRed;
+  cursor: pointer;
+  @include tab {
+    margin-bottom: 0;
+  }
+  &.dateactive {
+    background-color: $red;
+  }
+  &.dateactive{
+    cursor: default;
+  }
+  &__date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    font-size: 22rem;
+    line-height: 1;
+    @include tab {
+      flex-wrap: wrap;
+      font-size: 34rem;
+    }
+    @include sp {
+      font-size: 20rem;
+    }
+    &--week{
+      padding: 0 2rem;
+      letter-spacing: 0.08em;
+      @include tab {
+        font-size: 24rem;
+      }
+      @include sp {
+        font-size: 16rem;
+      }
+    }
+  }
+}

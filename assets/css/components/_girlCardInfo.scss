@@ -1,0 +1,85 @@
+.girlCardInfo{
+  width: 100%;
+  color: $gray;
+  &__time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    &--icon{
+      display: inline-flex;
+      align-items: center;
+      width: clamp( 16px, 2vw, 25px );
+      height: auto;
+      margin-right: 4px;
+      @include tab {
+        width: clamp( 20px, 3.8vw, 30px );
+        padding-top: 2rem;
+      }
+      img{
+        width: 100%;
+      }
+    }
+    &--text{
+      font-size: 26rem;
+      @include tab {
+        font-size: 34rem;
+      }
+      @include sp {
+        font-size: 20rem;
+      }
+    }
+  }
+  &__image{
+    &.new{
+      position: relative;
+      &::before{
+        position: absolute;
+        content: "";
+        $iconNew-size: clamp( 60px, 15vw, 89px );
+        width: $iconNew-size;
+        height: $iconNew-size;
+        background-image: url(../img/icon-new.svg);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  &__fee{
+    background-color: $gray;
+    color: #fff;
+    font-size: 25rem;
+    letter-spacing: 0.01em;
+    text-align: center;
+    @include tab {
+      font-size: 34rem;
+    }
+    @include sp {
+      font-size: 20rem;
+    }
+  }
+  &__name{
+    font-size: 28rem;
+    text-align: center;
+    @include tab {
+      font-size: 38rem;
+    }
+    @include sp {
+      font-size: 22rem;
+    }
+  }
+  &__size{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    font-size: 25rem;
+    text-align: center;
+    @include tab {
+      font-size: 34rem;
+    }
+    @include sp {
+      font-size: 20rem;
+    }
+  }
+}

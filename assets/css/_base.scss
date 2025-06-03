@@ -1,0 +1,243 @@
+@import "mixin";
+
+/* =============================================
+サイズ基準
+============================================= */
+:root {
+  font-size: 1px;
+  gap: 1px;
+  @include pc {
+    font-size: calc(100vw / 1280);
+    gap: calc(100vw / 1280);
+  }
+  @include tab {
+    font-size: calc(100vw / 768);
+    gap: calc(100vw / 768);
+  }
+  @include sp {
+    font-size: calc(100vw / 440);
+    gap: calc(100vw / 440);
+  }
+}
+
+/* =============================================
+フォント種類
+============================================= */
+
+// セリフ体
+$baskerville-400: "baskerville-urw", serif;
+$ryumin-pr6n-300: "a-otf-ryumin-pr6n", serif;
+$ryumin-pr5-500: "A-OTF-RyuminPr5-Medium", serif;
+
+// サンセリフ体
+$kozuka-gothic-400: "kozuka-gothic-pr6n", sans-serif;
+$HummingStd-B: "HummingStd-B", sans-serif;
+
+/* =============================================
+全体に対して
+============================================= */
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior: auto;
+}
+body.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+  font-family: $ryumin-pr6n-300;
+  font-variant-ligatures: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16rem;
+  font-feature-settings: "palt" 1;
+  line-height: 1.4;
+  color: $gray;  
+}
+main{
+  overflow: hidden;
+}
+
+/* =============================================
+htmlタグに対して
+============================================= */
+a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  &:hover {
+    color: #888;
+  }
+}
+li {
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* =============================================
+各所共通で使う用
+============================================= */
+.pc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 32px;
+  @include center;
+  @include tab {
+    width: unset;
+    max-width: unset;
+    margin: unset;
+    padding: unset;
+  }
+}
+.tab-container{
+  @include tab {
+    width: 96%!important;
+    margin: 0 auto;
+  }
+}
+.hidden{
+  display: none!important;
+}
+.section{
+  &.bgPink{
+    padding-top: 40rem;
+    background-color: $pink;
+    @include tab {
+      padding-top: 64rem;
+    }
+    @include sp {
+      padding-top: 40rem;
+    }
+  }
+  &__title{
+    position: relative;
+    &--text{
+      color: $gray;
+      font-size: 32rem;
+      font-family: $ryumin-pr6n-300;
+      font-weight: 300;
+      text-align: center;
+      @include sp {
+        font-size: 24rem;
+      }
+    }
+    &--deco{
+      width: clamp( 0px, 30vw, 388px );
+      margin: -32rem auto 0;
+      @include tab {
+        width: clamp( 0px, 48vw, 388px );
+      }
+      @include sp {
+        margin: -24rem auto 0;
+      }
+    }
+  }
+  &__toTop{
+    @include tab {
+      padding-top: 80rem;
+      padding-right: 20rem;
+      padding-bottom: 40rem;
+      text-align: right;
+    }
+    a{
+      color: $gray;
+      font-size: 32rem;
+      letter-spacing: 0.2em;
+      text-decoration: underline;
+      @include sp {
+        font-size: 16rem;
+      }
+    }
+  }
+}
+
+/* =============================================
+レスポンシブ対応用
+============================================= */
+.pc {
+  display: block !important;
+  @include tab {
+    display: none !important;
+  }
+}
+.pc-flex {
+  display: flex !important;
+  @include tab {
+    display: none !important;
+  }
+}
+.tab {
+  display: none !important;
+  @include tab {
+    display: block !important;
+  }
+}
+.tab-inline {
+  display: none !important;
+  @include tab {
+    display: inline !important;
+  }
+}
+.sp {
+  display: none !important;
+  @include sp {
+    display: block !important;
+  }
+}
+.sp-inline {
+  display: none !important;
+  @include sp {
+    display: inline !important;
+  }
+}
+.noTab{
+  @include tab {
+    display: none!important;
+  }
+}
+
+/* =============================================
+フレックス要素用
+============================================= */
+.flex {
+  @include flex;
+}
+
+.flex-low {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  @include flex-center;
+}
+
+.flex-around {
+  @include flex-around;
+}
+
+/* =============================================
+固定表示用
+============================================= */
+.fixed {
+  position: fixed !important; 
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+}
+
+/* =============================================
+ボタンで表示・非表示JSで値操作
+============================================= */
+[data-display="hide"] {
+  display: none;
+}
+
+[data-display="show"] {
+  display: block;
+}

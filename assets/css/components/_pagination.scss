@@ -1,0 +1,26 @@
+.pagination{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 16rem;
+  padding: 40rem 0;
+  background-color: $pink;
+  a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 63px;
+    aspect-ratio: 1 / 1;
+    background-color: #d6d6d6;
+    color: #fff;
+    font-size: 47rem;
+    font-weight: 900;
+    &.active{
+      background-color: $dustyBlue;
+    }
+    @include sp {
+      width: 40px;
+      font-size: 32rem;
+    }
+  }
+}

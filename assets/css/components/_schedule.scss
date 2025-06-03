@@ -1,0 +1,23 @@
+.schedule{
+  &__content{
+    padding-bottom: 80rem;
+  }
+  &__days {
+    margin: 24px auto 0px;
+    @include tab {
+      margin: 80px auto 0px;
+    }
+    &--list {
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+      position: relative;
+      gap: 2rem;
+      @include tab {
+        gap: 8rem;
+      }
+      @include sp {
+        gap: 4rem;
+      }
+    }
+  }
+}

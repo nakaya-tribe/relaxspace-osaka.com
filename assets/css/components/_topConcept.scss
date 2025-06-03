@@ -1,0 +1,101 @@
+.topConcept{
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100vw solid #ececeb;
+    border-top: calc(100vw * 256 / 2560) solid transparent;
+  }
+  &__bg{
+    position: absolute;
+    width: 60vw;
+    height: 58vw;
+    top: calc( (-1) * 32vw / (2500 / 100));
+    bottom: 0;
+    right: -10vw;
+    @include tab {
+      position: relative;
+      width: 100%;
+      height: calc( ( 665 / 750 ) * 100vw );
+      top: calc( (-1) * 32vw / (768 / 100));
+      z-index: 1;
+      right: 0;
+      img{
+        position: absolute;
+        width: 100%;
+        right: -20vw;
+      }
+    }
+  }
+  &__bgWrapper{
+    @include tab {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 100vw solid #ececeb;
+        border-top: calc(100vw * 75 / 750) solid transparent;
+        z-index: 1;
+      }
+    }
+  }
+  &__content{
+    position: relative;
+    z-index: 1;
+    padding-top: calc(160vw / (2500 / 100));
+    padding-bottom: calc(300vw / (2500 / 100));
+    padding-right: calc(280vw / (1880 / 100));
+    text-align: center;
+    @include tab {
+      background-color: #ececeb;
+      padding-top: 32rem;
+      padding-right: 0;
+      padding-bottom: 32rem;
+    }
+    &--shopname{
+      font-family: $baskerville-400;
+      font-weight: 400;
+      font-size: calc( 88vw / (2500 / 100));
+      @include tab {
+        font-size: 80rem;
+      }
+      @include sp {
+        font-size: 40rem;
+      }
+    }
+    &--title{
+      margin-bottom: 0.2em;
+      font-size: calc( 66vw / (2500 / 100));
+      letter-spacing: 0.2em;
+      @include tab {
+        font-size: 64rem;
+      }
+      @include sp {
+        font-size: 32rem;
+      }
+    }
+    &--text{
+      margin-bottom: 1em;
+      font-family: $ryumin-pr5-500;
+      font-weight: 500;
+      font-size: calc( 32vw / (2500 / 100));
+      letter-spacing: 0.075em;
+      line-height: calc( 50 / 32 );
+      @include tab {
+        font-size: 32rem;
+      }
+      @include sp {
+        font-size: 16rem;
+      }
+    }
+  }
+}

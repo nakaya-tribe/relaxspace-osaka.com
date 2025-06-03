@@ -1,0 +1,44 @@
+.footer{
+  padding-top: 32rem;
+  background-color: $dustyBlue;
+  @include tab {
+    background-color: $pink;
+  }
+  &__container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32rem;
+    &--logo {
+      width: 346px;
+      @include pc {
+        width: calc(346vw / (1280 / 100));
+      }
+    }
+  }
+  &__nav{
+    margin-bottom: 4em;
+  }
+  &__copyright{
+    padding-bottom: 4em;
+    text-align: center;
+    @include tab {
+      padding-bottom: 2em;
+    }
+    small{
+      color: #fff;
+      font-size: 24rem;
+      @include tab {
+        color: $gray;
+      }
+      @include sp {
+        font-size: 16rem;
+      }
+    }
+  }
+}

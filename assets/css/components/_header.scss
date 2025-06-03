@@ -1,0 +1,66 @@
+.header {
+  .headerTop{
+    width: 100%;
+    padding: 20rem 0;
+    background-color: $dustyBlue;
+    @include tab {
+      padding: 0;
+    }
+  }
+  &__top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    @include tab {
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+      padding: 32rem 24rem;
+      gap: 32rem;
+    }
+    @include sp {
+      grid-template-columns: 8fr 1fr;
+      padding: 8rem 12rem;
+      gap: 16rem;
+    }
+    &--logo {
+      width: 346px;
+      @include pc {
+        width: calc(346vw / (1280 / 100));
+      }
+      @include tab {
+        width: 100%;
+      }
+    }
+    &--ham{
+      height: 100%;
+    }
+  }
+  &__nav {
+    padding: 32rem 0;
+    background-color: #fff;
+    color: $black;
+    position: relative;
+    @include tab{
+      padding: 0;
+    }
+  }
+}
+.headerInfo{
+  &__text{
+    display: block;
+    color: #fff;
+    font-family: $kozuka-gothic-400;
+    font-weight: 400;
+    font-size: 23rem;
+    letter-spacing: 0.05em;
+    text-align: right;
+  }
+  &__num{
+    display: block;
+    width: 380px;
+    @include pc {
+      width: calc(380vw / (1280 / 100));
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.newFace{
+  &__img{
+    width: 80%;
+    margin: 0 auto 16px;
+    @include tab {
+      max-width: 375px;
+      margin: 0 auto 16px;
+      text-align: center;
+    }
+  }
+  &__name{
+    margin-bottom: 16px;
+    font-size: 26rem;
+    font-weight: 900;
+    text-align: center;
+  }
+  &__phrase{
+    margin-bottom: 16px;
+    font-size: 23rem;
+    font-weight: 900;
+    text-align: center;
+  }
+  &__desc{
+    font-size: 14rem;
+    font-weight: 400;
+    text-align: left;
+  }
+}

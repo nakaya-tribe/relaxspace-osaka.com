@@ -1,0 +1,132 @@
+/* =============================================
+ハンバーガーボタン
+============================================= */
+.hamburger {
+  height: 100%;
+  aspect-ratio: 1/1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16rem;
+  padding: 6rem 32rem 12rem;
+  border: 4px solid #fff;
+  border-radius: 8rem;
+  position: relative;
+  z-index: 100;
+  @include tab {
+    display: flex!important;
+  }
+  @include sp {
+    padding: 4rem 16rem 8rem;
+    gap: 8rem;
+  }
+
+  &.hamburgerActive{
+    border: none;
+  }
+  span {
+    width: 100%;
+    height: calc(8vw / (768 / 100));
+    background-color : #fff;
+    &:nth-of-type(1),&:nth-of-type(2){
+      transition: 0.3s all ease-in-out;
+    }
+    &:nth-of-type(4){
+      background: none;
+      color: #fff;
+      font-family: $kozuka-gothic-400;
+      font-size: 25rem;
+      font-weight: 400;
+      transform: translateY(-8px);
+      @include sp {
+        padding-top: 2rem;
+        font-size: 16rem;
+      }
+    }
+    &.hamBarActive{
+      &:nth-of-type(1),&:nth-of-type(2){
+        width: 90% !important;
+      }
+      &:nth-of-type(1){
+        transform: rotate(45deg) translateY(16px);
+        @include sp {
+          transform: rotate(45deg) translateY(8px);
+        }
+      }
+      &:nth-of-type(2){
+        transform: rotate(-45deg) translateY(-16px);
+        @include sp {
+          transform: rotate(-45deg) translateY(-8px);
+        }
+      }
+      &:nth-of-type(3){
+        background-color: transparent !important;
+      }
+      &:nth-of-type(4){
+        display: none;
+      }
+    }
+  }
+}
+
+/* =============================================
+ハンバーガーメニュー中身
+============================================= */
+.hamNav{
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ff81a0;
+  color: #fff;
+  transition: 0.6s all ease-out;
+  z-index: 90;
+  overflow-x: hidden;
+  @include tab{
+    display: flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-active {
+    left: 0 !important;
+  }
+  &__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 80%;
+    max-width: 420px;
+    margin: 0 auto;
+    li{
+      width: 100%;
+      &:first-child{
+        button{
+          background-color: $green;
+        }
+      }
+      &:nth-child(2){
+        button{
+          background-color: $blue;
+        }
+      }
+      button{
+        display: block;
+        width: 100%;
+        padding: 0.4em 0;
+        border-radius: 8px;
+        color: #fff;
+        font-weight: 900;
+        font-size: 39rem;
+        text-align: center;
+        align-content: center;
+        @include sp {
+          font-size: 24rem;
+        }
+      }
+    }
+  }
+}

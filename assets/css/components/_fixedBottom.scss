@@ -1,0 +1,28 @@
+.fixedBottom{
+  display: none;
+  @include tab {
+    display: grid;
+    width: 100vw;
+    height: clamp(  80px, 18vw, 196px );
+    grid-template-columns: repeat(3,1fr);
+    background-color: $dustyBlue;
+  }
+  &.fixed{
+    top: unset;
+    bottom: 0;
+  }
+  &__list{
+    height: 100%;
+    &--button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      img{
+        width: clamp( 50px, 15vw, 138px );
+        height: clamp( 50px, 15vw, 138px );
+      }
+    }
+  }
+}

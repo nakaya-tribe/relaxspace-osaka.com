@@ -1,0 +1,8 @@
+.cast{
+  &__content{
+    padding-bottom: 40rem;
+    @include tab {
+      padding-bottom: 0;
+    }
+  }
+}

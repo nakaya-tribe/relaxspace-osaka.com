@@ -1,0 +1,27 @@
+.event{
+  &__content{
+    width: 80%;
+    margin: 0 auto;
+    @include tab {
+      width: 100%;
+    }
+    &--section{
+      margin-bottom: 64px;
+    }
+  }
+}
+.eventImage{
+  margin-bottom: 32px;
+}
+.eventText{
+  li{
+    margin-bottom: 16px;
+    font-size: 37rem;
+    font-weight: 500;
+    text-align: center;
+    @include tab {
+      margin-bottom: 8px;
+      font-size: 25rem;
+    }
+  }
+}

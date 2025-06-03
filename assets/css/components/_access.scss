@@ -1,0 +1,49 @@
+.access{
+  &__content{
+    padding-top: 80rem;
+    @include tab {
+      padding-top: 120rem;
+    }
+    @include sp {
+      padding-top: 80rem;
+    }
+    &--list{
+      padding-bottom: 160rem;
+      @include tab {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 80rem;
+      }
+    }
+  }
+}
+.accessArea{
+  &__desc{
+    display: flex;
+    gap: 8rem;
+    padding-bottom: 8rem;
+    @include tab {
+      flex-direction: column;
+      gap: 2rem;
+      padding-bottom: 16rem;
+    }
+    span{
+      display: inline;
+      font-size: 26rem;
+      letter-spacing: 0.2em;
+      @include tab {
+        letter-spacing: 0;
+        text-align: center;
+      }
+      @include sp {
+        font-size: 16rem;
+      }
+    }
+  }
+  iframe{
+    width: 100%;
+    @include tab {
+      height: calc( 90vw * 532 / 676 );
+    }
+  }
+}

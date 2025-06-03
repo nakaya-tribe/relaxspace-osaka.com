@@ -1,0 +1,61 @@
+.topNew{
+  padding: 32rem 40rem 16rem;
+  background-color: #dbd5d8;
+  position: relative;
+  z-index: -1;
+  @include tab {
+    padding: 32rem 0 16rem;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: calc( 600 / 2560 * 100vw) solid #dbd5d8;
+    border-right: 100vw solid $pink;
+    left: 0;
+    @include tab {
+      border-top: calc( 800 / 750 * 100vw) solid #dbd5d8;
+      border-right: 200vw solid $pink;
+      left: -100%;
+    }
+  }
+  &__content{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 48rem;
+    padding-bottom: 16rem;
+  }
+  .topNewSwiper {
+    .swiper-wrapper {
+      display: flex;
+      margin-bottom: 48rem;
+      @include tab {
+        margin-bottom: 80rem;
+      }
+    }
+    .girlCardInfo{
+      &__fee{
+        font-size: 29rem;
+        @include sp {
+          font-size: 21rem;
+        }
+      }
+      &__name{
+        color: $gray!important;
+        font-size: 30rem;
+        @include sp {
+          font-size: 22rem;
+        }
+      }
+      &__size{
+        color: $gray!important;
+        font-size: 26rem;
+        @include sp {
+          font-size: 16rem;
+        }
+      }
+    }
+  }
+}

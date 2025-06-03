@@ -1,0 +1,22 @@
+.topBanner{
+  width: 100%;
+  margin-bottom: 32px;
+  padding: 0 40rem;
+  position: relative;
+  @include tab {
+    margin-bottom: 0;
+    padding: 64rem 40rem;
+  }
+  .topBannerSwiper {
+    width: 100%; 
+    padding-bottom: 2.4em;
+    overflow: hidden;
+    .swiper-wrapper {
+      display: flex;
+      margin-bottom: 24rem;
+      @include tab {
+        margin-bottom: 48rem;
+      }
+    }
+  }
+}

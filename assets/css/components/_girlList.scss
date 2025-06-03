@@ -1,0 +1,15 @@
+.girlList{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 48rem 16rem;
+  padding-top: 56rem;
+  padding-bottom: 40rem;
+  @include tab {
+    grid-template-columns: repeat(2,1fr);
+    gap: 64rem 24rem;
+  }
+  @include sp {
+    gap: 32rem 12rem;
+    padding-top: 40rem;
+  }
+}

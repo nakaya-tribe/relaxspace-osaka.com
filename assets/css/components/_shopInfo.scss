@@ -1,0 +1,18 @@
+.shopInfo{
+  &__text{
+    display: block;
+    color: #fff;
+    font-family: $kozuka-gothic-400;
+    font-weight: 400;
+    font-size: 23rem;
+    letter-spacing: 0.05em;
+    text-align: right;
+  }
+  &__num{
+    display: block;
+    width: 380px;
+    @include pc {
+      width: calc(380vw / (1280 / 100));
+    }
+  }
+}

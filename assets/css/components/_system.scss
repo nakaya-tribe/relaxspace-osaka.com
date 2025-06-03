@@ -1,0 +1,91 @@
+.system{
+  color :$gray;
+  &__top{
+    width: clamp(  300px, 45vw, 540px );
+    margin: 0 auto 80rem;
+    padding-top: 80rem;
+    @include tab {
+      width: 72%;
+      padding-top: 40rem;
+    }
+    &--info{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 40rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $gray;
+      span{
+        font-size: 30rem;
+        @include sp {
+          font-size: 20rem;
+        }
+      }
+    }
+  }
+  &__card{
+    margin-bottom: 48rem;
+    @include tab {
+      margin-bottom: 80rem;
+    }
+    &--list{
+      display: flex;
+      width: clamp( 200px, 40vw, 300px );
+      margin: 0 auto 12rem;
+      justify-content: center;
+      gap: 12rem; 
+      @include tab {
+        width: 80%;
+      }
+    }
+    &--text{
+      color: $black;
+      font-family: $ryumin-pr5-500;
+      font-size: 20rem;
+      letter-spacing: 0.2em;
+      text-align: center;
+    }
+  }
+  &__attention{
+    padding-bottom: 120rem;
+    color: $black;
+    @include tab {
+      padding-bottom: 80rem;
+    }
+    &--title{
+      width: 100%;
+      margin-bottom: 40rem;
+      padding-bottom: 8rem;
+      border-bottom: 1px solid $black;
+      font-family: $ryumin-pr5-500;
+      font-size: 31rem;
+      letter-spacing: 0.2em;
+      text-align: center;
+      @include tab {
+        font-size: 36rem;
+      }
+      @include tab {
+        font-size: 24rem;
+      }
+    }
+    &--list{
+      width: clamp( 400px, 52vw, 700px );
+      margin: 0 auto;
+      @include tab {
+        width: 90%;
+      }
+      li{
+        font-size: 17rem;
+        font-family: $kozuka-gothic-400;
+        line-height: calc( 31 / 17 );
+        text-align: left;
+        @include tab {
+          font-size: 22rem;
+        }
+        @include sp {
+          font-size: 13rem;
+        }
+      }
+    }
+  }
+}
