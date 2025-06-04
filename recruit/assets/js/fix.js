@@ -4,10 +4,11 @@ document.addEventListener("scroll", function () {
   const footer = document.querySelector(".footer");
   const fixedContent = document.querySelector(".fixedBottom");
   const hamburger = document.querySelector(".hamburger");
+  const headerLogo = document.querySelector(".headerLogo");
 
   if (!isMobile) {
     if (header && footer) {
-      setupScrollHandler(header, footer);
+      setupScrollHandler(header, footer, headerLogo);
     }
   } else {
     if (fixedContent) {
@@ -18,7 +19,7 @@ document.addEventListener("scroll", function () {
 
 // ヘッダー固定・解除処理
 let isNavFixed = false;
-function setupScrollHandler(header, footer) {
+function setupScrollHandler(header, footer, headerLogo) {
   const headerHeight = header.offsetHeight;
 
   window.addEventListener("scroll", function () {
@@ -30,11 +31,13 @@ function setupScrollHandler(header, footer) {
     if (scrollTop > 0) {
       if (!isNavFixed) {
         header.classList.add("fixed");
+        headerLogo.classList.add("logoHidden");
         isNavFixed = true;
       }
     } else {
       if (isNavFixed) {
         header.classList.remove("fixed");
+        headerLogo.classList.remove("logoHidden");
         isNavFixed = false;
         header.style.backgroundColor = "";
       }

@@ -26,4 +26,13 @@
       width: 100%;
     }
   }
+  .headerLogo{
+    &.logoHidden{
+      width: 2%;
+      opacity: 0;
+      a{
+        pointer-events: none;
+      }
+    }
+  }
 }
