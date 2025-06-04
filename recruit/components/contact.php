@@ -5,7 +5,7 @@
       応募お待ちしております
     </p>
     <a class="contact__top--info" href="tel:0120-946-174">
-      <img src="<?php echo $path; ?>assets/img/contactInfo.svg" alt="">
+      <img src="<?php echo $path; ?>assets/img/contactInfo.webp" alt="">
     </a>
     <p class="contact__top--text pc">友達追加からQRコードで登録</p>
     <div class="contact__top--line noTab">
