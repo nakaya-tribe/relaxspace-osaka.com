@@ -7,7 +7,7 @@
     padding-bottom: 44rem;
   }
   &.fixed{
-    padding: 0;
+    padding: 8rem;
     background-color: rgba( $navy, 0.8 );
   }
   &__inner{
@@ -28,11 +28,7 @@
   }
   .headerLogo{
     &.logoHidden{
-      width: 2%;
-      opacity: 0;
-      a{
-        pointer-events: none;
-      }
+      display: none;
     }
   }
 }
