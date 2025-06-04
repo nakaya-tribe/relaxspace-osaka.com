@@ -3,10 +3,10 @@
   @include tab {
     display: grid;
     width: 100vw;
-    height: clamp(  106rem, 21vw, 154px);
+    height: clamp( 80rem, 21vw, 154px);
     grid-template-columns: repeat(3,1fr);
     gap: 16rem;
-    padding: 16rem 8rem;
+    padding: 16rem 9rem;
     background-color: $navy;
   }
   &.fixed{
@@ -25,7 +25,7 @@
       background-color: #fff;
       border-radius: 8px;
       img{
-        height: clamp( 40px, 10vw, 70px );
+        height: clamp( 30px, 8vw, 70px );
       }
       span{
         color: $navy;
