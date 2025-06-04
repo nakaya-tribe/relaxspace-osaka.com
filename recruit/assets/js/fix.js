@@ -30,7 +30,6 @@ function setupScrollHandler(header, footer) {
     if (scrollTop > 0) {
       if (!isNavFixed) {
         header.classList.add("fixed");
-        header.classList.remove("hidden");
         isNavFixed = true;
       }
     } else {
@@ -38,9 +37,6 @@ function setupScrollHandler(header, footer) {
         header.classList.remove("fixed");
         isNavFixed = false;
         header.style.backgroundColor = "";
-        header.classList.remove("hidden");
-      } else {
-        header.classList.remove("hidden");
       }
     }
 
