@@ -21,6 +21,9 @@
       @include tab {
         padding: 1.2em;
       }
+      @include sp {
+        padding: 0.4em;
+      }
     }
   }
 }
