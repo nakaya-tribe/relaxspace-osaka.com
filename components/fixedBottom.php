@@ -11,7 +11,7 @@
   </li>
   <li class="fixedBottom__list">
     <a class="fixedBottom__list--button" href="#header">
-      <!-- <img src="<?php echo $path; ?>assets/img/icon-line.svg" alt=""> -->
+      <img src="<?php echo $path; ?>assets/img/icon-top.svg" alt="">
     </a>
   </li>
 </ul>
