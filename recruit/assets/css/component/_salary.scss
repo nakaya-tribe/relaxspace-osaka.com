@@ -1,6 +1,9 @@
 .salary{
   padding-top: 40rem;
   padding-bottom: 80rem;
+  @include tab {
+    padding-bottom: 40rem;
+  }
   &__section{
     margin-bottom: 104rem;
     @include sp {
@@ -12,6 +15,7 @@
       text-align: center;
       @include tab {
         height: clamp( 30px, 10vw, 70px );
+        margin-bottom: 16rem;
       }
       img{
         height: 100%;
@@ -22,12 +26,14 @@
       font-size: 51rem;
       font-weight: 900;
       letter-spacing: 0.05em;
+      line-height: calc( 76 / 51 );
       text-align: center;
       @include tab {
+        margin-bottom: 16rem;
         font-size: 32rem;
       }
       @include sp {
-        font-size: 16rem;
+        font-size: 22rem;
       }
     }
     &--box{
@@ -53,7 +59,7 @@
       font-size: 36rem;
     }
     @include sp {
-      font-size: 18rem;
+      font-size: 22rem;
     }
   }
 }

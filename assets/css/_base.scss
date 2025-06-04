@@ -134,6 +134,7 @@ img {
         width: clamp( 0px, 48vw, 388px );
       }
       @include sp {
+        width: clamp( 0px, 52vw, 240px );
         margin: -24rem auto 0;
       }
     }

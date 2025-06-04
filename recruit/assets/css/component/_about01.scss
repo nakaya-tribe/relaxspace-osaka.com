@@ -7,12 +7,18 @@
     @include tab {
       margin-top: 40rem;
     }
+    @include sp {
+      margin-top: 20rem;
+    }
     &__image{
       position: absolute;
       width: 80%;
       height: auto;
       right: 0%;
       top: 0;
+      @include tab {
+        width: 64%;
+      }
     }
     &__text{
       position: absolute;
@@ -21,6 +27,9 @@
       gap: 16rem;
       left: 0%;
       bottom: 12%;
+      @include tab {
+        bottom: 20%;
+      }
       span{
         font-size: 74rem;
         transform: rotate(-2deg);
@@ -33,7 +42,7 @@
           font-size: 50rem; 
         }
         @include sp {
-          font-size: 24rem;
+          font-size: 28rem;
         }
         &:nth-child(1){
           padding-left: 0;

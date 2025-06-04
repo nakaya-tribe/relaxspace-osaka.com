@@ -11,20 +11,20 @@
         font-size: 31rem;
       }
       @include sp {
-        font-size: 15rem;
+        font-size: 18rem;
       }
     }
     &__bottom{
       font-size: 76rem;
-      text-shadow:
-        0 0 9px rgba(255, 0, 144, 0.72),
-        -1.8px 2.4px 8px rgba(255, 0, 144, 0.72);
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: rgba(#ff0090, 0.72);
       text-align: center;
       @include tab {
         font-size: 52rem;
+        -webkit-text-stroke-width: 0.4px;
       }
       @include sp {
-        font-size: 26rem;
+        font-size: 28rem;
       }
       span{
         position: relative;

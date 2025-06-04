@@ -28,7 +28,10 @@
     padding-bottom: 4em;
     text-align: center;
     @include tab {
-      padding-bottom: 2em;
+      padding-bottom: 12em;
+    }
+    @include sp {
+      padding-bottom: 8em;
     }
     small{
       color: #fff;

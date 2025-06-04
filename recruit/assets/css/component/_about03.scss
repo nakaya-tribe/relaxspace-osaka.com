@@ -25,21 +25,32 @@
       &--bottom{
         padding: 24rem 0;
         background-color: #fff;
-        border-radius: 8px;
+        border-radius: 16px;
         position: relative;
+        @include tab {
+          padding: 16rem 0;
+          border-radius: 8px;
+        }
         &:after{
           position: absolute;
           content: "";
           border: 1px solid #66ccff;
-          border-radius: 8px;
-          top: 4px;
-          bottom: 4px;
-          left: 4px;
-          right: 4px;
+          border-radius: 14px;
+          top: 6px;
+          bottom: 6px;
+          left: 6px;
+          right: 6px;
           box-shadow: 
             0 0 1px #66ccff,
             0 0 4px #66ccff,
             0 0 8px #66ccff;
+            @include tab {
+              border-radius: 6px;
+              top: 4px;
+              bottom: 4px;
+              left: 4px;
+              right: 4px;
+            }
         }
         p{
           color: #0123b5;
@@ -53,7 +64,7 @@
             font-size: 32rem;
           }
           @include sp {
-            font-size: 16rem;
+            font-size: 18rem;
           }
         }
       }
