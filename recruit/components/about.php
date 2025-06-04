@@ -1,4 +1,4 @@
-<section class="about" id="about">
+<section class="about bg__inner bg02__inner" id="about">
   <div class="about__inner pc-container tab-container">
 
     <h2 class="sectionTitle">当店について</h2>

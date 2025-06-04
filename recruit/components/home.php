@@ -1,4 +1,4 @@
-<section class="home" id="home">
+<section class="home bg__inner bg01__inner" id="home">
   <div class="pc-container decoStar decoStar1"></div>
   <div class="home__inner img_res">
     <img src="<?php echo $path; ?>assets/img/mv_tab.webp" alt="1日6万円以上稼げる">

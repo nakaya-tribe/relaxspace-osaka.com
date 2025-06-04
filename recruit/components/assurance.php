@@ -1,4 +1,4 @@
-<section class="assurance" id="assurance">
+<section class="assurance bg__inner bg04__inner" id="assurance">
   <div class="pc-container">
     <div class="tab-container">
       <div class="decoStar decoStar17 tab"></div>

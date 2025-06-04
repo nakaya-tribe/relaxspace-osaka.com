@@ -1,4 +1,4 @@
-<section class="salary" id="salary">
+<section class="salary bg__inner bg03__inner" id="salary">
   <div class="salary__inner pc-container tab-container">
 
     <div class="decoStar decoStar10"></div>
