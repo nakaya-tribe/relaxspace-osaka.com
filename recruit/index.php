@@ -3,7 +3,6 @@
   <div class="bg__inner bg01__inner">
     <?php include $path . 'components/header.php'; ?>
     <?php include $path . './components/home.php'; ?>
-
   </div>
 </div>
 <div class="bg bg02">
@@ -23,5 +22,5 @@
 </div>
 <div class="bg bg05">
   <?php include $path . './components/contact.php'; ?>
-  <?php include $path . './components/footer.php'; ?>
 </div>
+<?php include $path . './components/footer.php'; ?>
