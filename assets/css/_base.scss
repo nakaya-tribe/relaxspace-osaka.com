@@ -54,7 +54,11 @@ body {
   font-size: 16rem;
   font-feature-settings: "palt" 1;
   line-height: 1.4;
-  color: $gray;  
+  color: $gray;
+  zoom: 0.75;
+  @include tab {
+    zoom: 1;
+  }
 }
 main{
   overflow: hidden;
