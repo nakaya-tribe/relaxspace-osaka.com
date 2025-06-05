@@ -1,6 +1,6 @@
 <?php
 $path = './';
-$url = 'http://localhost:8888/relaxspace-osaka.com/recruit/';
+$url = 'https://relaxspace.tribe-webtest.xyz/recruit/';
 
 session_start();
 header('X-Frame-Options: DENY');
