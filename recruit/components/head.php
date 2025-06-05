@@ -53,7 +53,7 @@ function token_chk($token)
   <meta property="og:title" content="リラックススペース求人サイト" />
   <meta property="og:description"
     content="女の子の為の大阪の高収入求人と言えばリラックススペース" />
-  <meta property="og:url" content="https://p-flamingo-biz.tribe-webtest.xyz/" />
+  <meta property="og:url" content="<?php echo $url; ?>" />
   <meta property="og:site_name" content="リラックススペース求人サイト" />
   <meta property="og:image" content="<?php echo $url; ?>assets/img/ogp.webp" />
   <meta property="og:image:width" content="1200" />
